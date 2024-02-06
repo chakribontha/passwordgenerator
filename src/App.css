@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.conatiner{
+  background-color: rgb(150, 185, 143);
+  padding: 24px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  color: aliceblue;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 600;
+}
+button{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(185, 220, 126);
   color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+  background-color: rgb(28, 70, 20);
 }
+copyBtn{
+  height: 30px;
+  font-size: 10px;
+}
+.charlength { 
+display: flex;
+flex-direction: column;
+color:white;
+font-size: 20px; 
+font-weight: 700; 
+padding-bottom: 24px;
+}
+.charlength span{
+  width: 100%; 
+  display: flex;
+ justify-content: space-between;
+ padding-bottom: 24px;
+}
+.checkboxes {
+ display: grid; 
+ grid-template-columns: auto auto;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ font-size: 16px;
+ font-weight:700;
+ color:white;
+}
+.checkboxes div {
+display: flex;
+gap: 5px;
+padding-bottom: 25px;
+}
+.generateBtn{
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+}
+.errorMessage{
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
 }
